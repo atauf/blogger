@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :articles
+  root to: 'articles#index'			#This roots http://localhost:3000 to the 'Articles' index page
+  resources :articles 				#so you don't have to type in http://localhost:3000/articles
 end
